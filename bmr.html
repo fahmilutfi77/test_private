@@ -1,0 +1,65 @@
+<head>
+	<title>Kalkulator Kalori Kiaria-fit</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+
+
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="bmr.css">
+</head>
+<body>
+	<h1>Kalkulator Kalori Kiaria-fit</h1>
+	<div>
+		Gender <i class="fa fa-venus-mars" aria-hidden="true"></i>:
+		<select name="gender">
+			<option value="0" name="male">Laki-Laki</option>
+			<option value="1" name="female">Perempuan</option>
+		</select>
+	</div>
+
+	<div class="form-group row">
+	  <div class="measurements col-xs-2 center_div">
+	      <label>Usia <i class="fa fa-hourglass-start" aria-hidden="true"></i></label><input type="text" name="age" class="form-control">
+	      <label>Tinggi Badan (cm) <i class="fa fa-male" aria-hidden="true"></i></label><input type = "text" name="height" class="form-control">
+	      <label>Berat Badan(kg) <i class="fa fa-anchor" aria-hidden="true"></i></label><input type="text" name="weight" class="form-control">
+	  </div>
+	</div>
+
+
+
+
+	<h2>Berapa Sering Anda Berolahraga?</h2>
+	<div class="bottom">
+		Intensitas Olahraga Anda : <i class="fa fa-line-chart" aria-hidden="true"></i>:
+		<select name="level">
+			<option value="0"> Ringan : Tidak Pernah </option>
+			<option value="1"> Sedang : 1-3x Seminggu </option>
+			<option value="2"> Berat : Setiap Hari </option>
+			<option value="3"> Ekstrim : Sehari 2x </option>
+		</select>
+	</div>
+
+
+	<div class="measurements">
+		<button type="button" class="divider btn" id="calculate">Hitung BMI</button>
+		<button type="button" class="divider btn" id="reset">Reset</button>
+	</div>
+
+
+
+	<div>
+		<span id="daily"></span>
+	</div>
+
+	<script type="text/javascript" src="bmr.js"></script>
+
+
+
+
+
+
+</body>
+</html>
